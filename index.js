@@ -1,7 +1,7 @@
 require('dotenv').config();
 
-const app = require('./app');
-require('./database');
+const app = require('./src/app');
+require('./src/database');
 // esta logica es para ejecutra el servidor
 
 async function main() {
