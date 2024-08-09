@@ -60,7 +60,7 @@ const getFile = async (req, res) => {
   
       // seteamos el header para que el navegador sepa que es un archivo
       res.set('Content-Type', file[0].contentType);
-      res.set('Content-Disposition', `attachment; filename="${file[0].filename}"`);
+    
   
       // creamos un stream para leer el archivo
       const downloadStream = bucket.openDownloadStream(new mongoose.Types.ObjectId(fileId));
